@@ -4,7 +4,7 @@
 from flask_script import Manager, Server
 from flask_script.commands import Clean
 from app import db, create_app
-from app.models import Role, User
+from app.models import Role, Employee, User
 
 
 app = create_app()
@@ -16,7 +16,7 @@ manager.add_command("clean", Clean())
 @manager.shell
 def make_shell_context():
     return dict(app=app, db=db,
-                Role=Role, User=User)
+                Role=Role, Employee=Employee, User=User)
 
 if __name__ == "__main__":
     manager.run()
