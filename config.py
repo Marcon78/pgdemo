@@ -7,4 +7,4 @@ SQLALCHEMY_COMMIT_ON_TEARDOWN = False
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 # 启用记录查询统计数字的功能。
 SQLALCHEMY_RECORD_QUERIES = True
-SQLALCHEMY_DATABASE_URI = "postgresql://devusr:engine@localhost/mydb"
+SQLALCHEMY_DATABASE_URI = "postgresql://devuser:engine@localhost/mydb"
